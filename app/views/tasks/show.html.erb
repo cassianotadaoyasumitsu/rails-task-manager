@@ -5,5 +5,5 @@
 
 <%= link_to 'Back', index_path %>
 <%= link_to 'Edit', edit_path %>
-<%= link_to 'Delete', delete_path, method: :delete %>
+<%= link_to 'Delete', delete_path, method: :delete, data: { confirm: "Are you sure?" } %>
 
