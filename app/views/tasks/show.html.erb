@@ -1,0 +1,9 @@
+<h1><%= @task.title %></h1>
+
+<p><%= @task.details %></p>
+<p><input type="checkbox" value="<%= @task.title %>" <%= 'checked' if @task.completed %>> This task is not completed yet</p>
+
+<%= link_to 'Back', index_path %>
+<%= link_to 'Edit', edit_path %>
+<%= link_to 'Delete', delete_path, method: :delete %>
+
